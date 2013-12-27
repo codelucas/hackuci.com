@@ -1,0 +1,137 @@
+<div id="portfolioSheetWrapper">
+
+    <header id="project">
+        <div class="container">
+         <div class="row">
+          <div class="col-md-10">
+            <h1>Gallery image project</h1>
+            <p class="date">In cats / November 24</p>
+        </div>
+        <div class="col-md-2">
+            <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+        </div>
+    </div>
+</div>
+</header>
+
+
+<section class="content">
+
+    <section class="mb15">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="portfolio-carousel" class="owl-carousel">
+                        <img src="images/portfolio/carousel-1.jpg" alt="Ashley premium website template" class="img-responsive"/>
+                        <img src="images/portfolio/carousel-2.jpg" alt="Ashley premium website template" class="img-responsive"/>
+                        <img src="images/portfolio/carousel-3.jpg" alt="Ashley premium website template" class="img-responsive"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Another successful project </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. Sed ac consectetur leo. Pellentesque habitant morbi tristique senectus et netus...</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Client</h2>
+                    <p>Big International Company</p>
+                    <h2>Technology</h2>
+                    <p>HTML5, CSS3, Bootstrap</p>
+                </div>
+                <div class="col-md-4">
+                    <div id="shareme" data-url="http://little-neko.com" data-text="Check out Ashley, a great Bootstrap 3 One page template"> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- call to action -->
+    <section class="slice mb15">
+        <div class="container">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="ctaBox ">
+                    <div class="container">
+                      <div class="row">
+                       <div class="col-md-8">
+                          <h1>
+                            <strong>Ashley Bootstrap Website Template</strong> is perfect for simple and clean presentation of your business.
+                        </h1>
+
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-lg" title="" href="#" target="blank">
+                            <i class="icon-flash"></i> purchase now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section> 
+<!-- call to action -->     
+</section>
+
+<footer>
+    <div class="container">
+    	<div class="row">
+            <div class="col-md-2 col-md-offset-10">
+                <a href="javascript:$.pageslide.close()" class="btn pull-right"><i class="icon-cancel-outline"></i>Close</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+<script type="text/javascript">
+   /*
+    |--------------------------------------------------------------------------
+    | OWL CAROUSEL
+    |--------------------------------------------------------------------------
+    */
+    if($('#portfolio-carousel').length){ 
+        $("#portfolio-carousel").owlCarousel(
+            {items : 1, navigation:true,navigationText:false}
+            );
+    }
+    
+
+    /*
+    |--------------------------------------------------------------------------
+    | SHARRRE
+    |--------------------------------------------------------------------------
+    */
+    if($('#shareme').length){
+
+        $('#shareme').sharrre({
+
+            share: {
+                googlePlus: true,
+                facebook: true,
+                twitter: true,
+                linkedin: true
+            },
+
+            buttons: {
+                googlePlus: {size: 'tall', annotation:'bubble'},
+                facebook: {layout: 'box_count'},
+                twitter: {count: 'vertical'},
+                linkedin: {counter: 'top'}
+            },
+
+            enableHover: false,
+            enableCounter: false,
+            enableTracking: true,
+          //url:'document.location.href'
+      });
+    } 
+
+    </script>
