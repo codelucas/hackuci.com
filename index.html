@@ -45,6 +45,37 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+
+        <!-- 
+            I know js should be at the end of an html file but out of laziness I am integrating
+            MailChimp's embedded forms in this file. The embedded forms override a lot of our
+            required javascript. So I put the registration form at the end and we can use our
+            javascript at the start of the file until then. ;)
+        -->
+		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+		<!-- third party plugins  -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
+
+		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
+		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+		<!-- Custom  -->
+		<script type="text/javascript" src="js/custom.js"></script>
 	</head>
 	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
 		<!-- Preloader -->
@@ -67,13 +98,12 @@
 							<a class="navbar-brand" href="index-fullscreen.html"><img src="images/hackUCI_black.png" alt="The biggest hackathon Irvine has ever seen!"/></a> </div>
 							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
 								<ul class="nav navbar-nav pull-right">
-									<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>register</a> </li>
-									<li><a href="#about"><i class="icon-star"></i>about</a> </li>
-                                    <li><a href="#services"><i class="icon-thumbs-up"></i>FAQ</a> </li>
-                                    <li><a href="#"><i class="icon-thumbs-up"></i>Sponsors</a> </li>
-									<!--<li><a href="#works"><i class="icon-popup-1"></i>Works</a> </li>
-									<li><a href="#team"><i class="icon-users"></i>Team</a> </li>
-                                    <li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>-->
+                                    <!--
+									<li class="active"><a href="#about"><i class="icon-star"></i>about</a> </li>
+                                    <li><a href="#faq"><i class="icon-thumbs-up"></i>FAQ</a> </li>
+                                    <li><a href="#register"><i class="icon-home-outline"></i>register</a></li>
+                                    <li><a href="#sponsors"><i class="icon-thumbs-up"></i>sponsors</a> </li>
+                                    -->
 								</ul>
 							</div>
 
@@ -94,17 +124,14 @@
 							<div class="flexslider" id="flexHome">
 								<ul class="slides">
 									<li>
-										<h1>Redefine Irvine</h1>							
+										<h1 style="font-size:50px;">Redefine Orange County</h1>
 									</li>
 									<li>
-										<h1>Art, technology, music..</h1>
-									</li>
-									<li>
-										<h1>Sponsored by top companies</h1>
+										<h1 style="font-size:50px;">Technology, art, music..</h1>
 									</li>
 								</ul>
 							</div> 
-							<a href="#about" class="homeBtn btn">register now</a>
+							<a href="#register" class="homeBtn btn">register now</a>
 						</div>
 					</div>
 				</section>
@@ -121,8 +148,7 @@
 				</section>
 				<!-- about us -->
 
-				<!-- services -->
-				<section class="slice" id="services">
+				<section class="slice" id="faq">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
@@ -130,7 +156,7 @@
 								<h2 class="subTitle">Frequently asked questions</h2>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row" style='font-family:"Open Sans"'>
 							<div class="col-md-3 col-sm-6 ">
 								<article class="boxFeature-2">
                                     <p><strong>What is a Hackathon?</strong></p>
@@ -168,87 +194,287 @@
 						</div>
 					</div>
 				</section>
-				<!-- services --> 
-
 				
-				<div id="paralaxSlice5" data-stellar-background-ratio="0.5">
+
+				<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
 					<div class="maskParent">
 						<div class="paralaxMask" style="background-image:url(/images/uci_map.jpg);background-repeat:no-repeat;background-size:cover;"></div>
                         <div class="paralaxText container"> <!-- TODO, fix all of this terrible inline styling -->
-							<blockquote class="bigTitle" style="background:rgba(0, 34, 68, 0.4);color:#ffde6c;">Let us change what it means to be from Irvine</blockquote>
+							<blockquote class="bigTitle" style="background:rgba(0, 34, 68, 0.4);color:#ffde6c;">Let us change what it means to be from Southern California</blockquote>
 						</div>
 					</div>
 				</div>
-				<!-- call to action -->
-					<div class="container mb15">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="color1 ctaBox ">
-									<div class="container">
-										<div class="row">
-											<div class="col-md-8">
-												<h1>
-													<strong>hackUCI will symbolize a new...</strong> era blah blah at UCI.
-												</h1>
+				
 
-											</div>
-											<div class="col-md-4">
-												<a class="btn btn-lg" title="" href="" target="blank">
-													<i class="icon-flash"></i> register now
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
+            <section class="slice" id="register">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="http://hackuci.us3.list-manage1.com/subscribe/post?u=89e8cf7ee54159553ae16fab3&amp;id=a5343423c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h2>Register for HackUCI Spring 2014!</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+    <label for="mce-SCHOOL">School  <span class="asterisk">*</span>
+</label>
+    <input type="text" value="" name="SCHOOL" class="required" id="mce-SCHOOL">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_89e8cf7ee54159553ae16fab3_a5343423c2" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<script type="text/javascript">
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='SCHOOL';ftypes[1]='text';
+try {
+    var jqueryLoaded=jQuery;
+    jqueryLoaded=true;
+} catch(err) {
+    var jqueryLoaded=false;
+}
+var head= document.getElementsByTagName('head')[0];
+if (!jqueryLoaded) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    head.appendChild(script);
+    if (script.readyState && script.onload!==null){
+        script.onreadystatechange= function () {
+              if (this.readyState == 'complete') mce_preload_check();
+        }    
+    }
+}
+
+var err_style = '';
+try{
+    err_style = mc_custom_error_style;
+} catch(e){
+    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+}
+var head= document.getElementsByTagName('head')[0];
+var style= document.createElement('style');
+style.type= 'text/css';
+if (style.styleSheet) {
+  style.styleSheet.cssText = err_style;
+} else {
+  style.appendChild(document.createTextNode(err_style));
+}
+head.appendChild(style);
+setTimeout('mce_preload_check();', 250);
+
+var mce_preload_checks = 0;
+function mce_preload_check(){
+    if (mce_preload_checks>40) return;
+    mce_preload_checks++;
+    try {
+        var jqueryLoaded=jQuery;
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+    head.appendChild(script);
+    try {
+        var validatorLoaded=jQuery("#fake-form").validate({});
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form(){
+    jQuery(document).ready( function($) {
+      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      options = { url: 'http://hackuci.us3.list-manage2.com/subscribe/post-json?u=89e8cf7ee54159553ae16fab3&id=a5343423c2&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                    beforeSubmit: function(){
+                        $('#mce_tmp_error_msg').remove();
+                        $('.datefield','#mc_embed_signup').each(
+                            function(){
+                                var txt = 'filled';
+                                var fields = new Array();
+                                var i = 0;
+                                $(':text', this).each(
+                                    function(){
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                                $(':hidden', this).each(
+                                    function(){
+                                        var bday = false;
+                                        if (fields.length == 2){
+                                            bday = true;
+                                            fields[2] = {'value':1970};//trick birthdays into having years
+                                        }
+                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                            this.value = '';
+                                        } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                            this.value = '';
+                                        } else {
+                                            if (/\[day\]/.test(fields[0].name)){
+                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                                         
+                                            } else {
+                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                            }
+                                        }
+                                    });
+                            });
+                        $('.phonefield-us','#mc_embed_signup').each(
+                            function(){
+                                var fields = new Array();
+                                var i = 0;
+                                $(':text', this).each(
+                                    function(){
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                                $(':hidden', this).each(
+                                    function(){
+                                        if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
+                                            this.value = '';
+                                        } else {
+                                            this.value = 'filled';
+                                        }
+                                    });
+                            });
+                        return mce_validator.form();
+                    }, 
+                    success: mce_success_cb
+                };
+      $('#mc-embedded-subscribe-form').ajaxForm(options);
+      
+      
+    });
+}
+function mce_success_cb(resp){
+    $('#mce-success-response').hide();
+    $('#mce-error-response').hide();
+    if (resp.result=="success"){
+        $('#mce-'+resp.result+'-response').show();
+        $('#mce-'+resp.result+'-response').html(resp.msg);
+        $('#mc-embedded-subscribe-form').each(function(){
+            this.reset();
+        });
+    } else {
+        var index = -1;
+        var msg;
+        try {
+            var parts = resp.msg.split(' - ',2);
+            if (parts[1]==undefined){
+                msg = resp.msg;
+            } else {
+                i = parseInt(parts[0]);
+                if (i.toString() == parts[0]){
+                    index = parts[0];
+                    msg = parts[1];
+                } else {
+                    index = -1;
+                    msg = resp.msg;
+                }
+            }
+        } catch(e){
+            index = -1;
+            msg = resp.msg;
+        }
+        try{
+            if (index== -1){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);            
+            } else {
+                err_id = 'mce_tmp_error_msg';
+                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                
+                var input_id = '#mc_embed_signup';
+                var f = $(input_id);
+                if (ftypes[index]=='address'){
+                    input_id = '#mce-'+fnames[index]+'-addr1';
+                    f = $(input_id).parent().parent().get(0);
+                } else if (ftypes[index]=='date'){
+                    input_id = '#mce-'+fnames[index]+'-month';
+                    f = $(input_id).parent().parent().get(0);
+                } else {
+                    input_id = '#mce-'+fnames[index];
+                    f = $().parent(input_id).get(0);
+                }
+                if (f){
+                    $(f).append(html);
+                    $(input_id).focus();
+                } else {
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(msg);
+                }
+            }
+        } catch(e){
+            $('#mce-'+resp.result+'-response').show();
+            $('#mce-'+resp.result+'-response').html(msg);
+        }
+    }
+}
+
+</script>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+				<section class="slice" id="sponsors">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h1>Sponsors</h1>
+                                <h2 class="subTitle">Click <a href="">here</a> if you're interested
+                                in sponsoring!</h2>
 							</div>
 						</div>
-					</div>
-					<!-- call to action -->
-
-					<!-- content -->
-					<!-- footer -->
-                    <!--
-					<footer class="color4">
-						<section id="mainFooter">
-							<div class="container" id="footer">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="footerWidget">
-											<h3>Little NEKO</h3>
-											<address>
-												<p> <i class="icon-location"></i>&nbsp;77 Mass. Ave., E14/E15<br>
-													Cambridge, MA 02139-4307 USA <br>
-													<i class="icon-phone"></i>&nbsp;615.987.1234 <br>
-													<i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@little-neko.com">little@little-neko.com</a>
-												</p>
-											</address>
-										</div>
-									</div>
-
-									<div class="col-sm-4">
-										<div class="footerWidget">
-											<h3>We're social</h3>
-											<ul class="socialNetwork pull-right">
-												<li><a href="#" class="tips" title="" data-original-title="follow me on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
-												<li><a href="https://twitter.com/LIttleNeko1" class="tips" title="" data-original-title="follow me on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
-												<li><a href="#" class="tips" title="" data-original-title="follow me on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
-												<li><a href="#" class="tips" title="" data-original-title="follow me on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
-												<li><a href="#" class="tips" title="" data-original-title="follow me on Dribble"><i class="icon-dribbble iconRounded"></i></a></li>
-											</ul>     
-											
-										</div>
-									</div>
-
-								</div>
+						<div class="row" style='font-family:"Open Sans"'>
+							<div class="col-md-4 col-sm-6 ">
+								<article class="boxFeature-2">
+                                    <img style="height:75%;width:75%;" src="http://www.hacktech.io/assets/sponsors/microsoft-454ef6ca060c91f2da14a33a1395dbf0.jpg"/>
+								</article>
 							</div>
-						</section>
-					</footer>
-                    -->
-					<section  id="footerRights">
+
+							<div class="col-md-4 col-sm-6">
+								<article class="boxFeature-2">
+                                    <img style="height:75%;width:75%;" src="http://www.hacktech.io/assets/sponsors/dropbox-5fe6c43fa9d11f81d753725bff062901.png"/>
+								</article>
+							</div>
+
+							<div class="col-md-4 col-sm-6">
+								<article class="boxFeature-2">
+                                    <img style="height:75%;width:75%;" src="http://www.hacktech.io/assets/sponsors/EMC-8d21fafb8d713edd1789b3e537e77fb4.png"/>
+								</article>
+							</div>	
+
+						</div>
+					</div>
+				</section>
+				<!-- services --> 
+            
+
+				<section  id="footerRights">
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-12 text-center">
-                                    <p style="font-size:20px;">Website built & designed by <a href="http://codelucas.com">Lucas Ou-Yang</a></p>
+                                    <p style="font-size:16px;">Website built & designed by <a href="http://codelucas.com">Lucas</a></p>
 								</div>
 
 							</div>
@@ -259,30 +485,6 @@
 				<!-- global wrapper -->
 		<!-- End Document 
 		================================================== -->
-		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
-		<script type="text/javascript" src="js-plugin/jquery/1.8.3/jquery.min.js"></script>
-		<script type="text/javascript" src="js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
-		<!-- third party plugins  -->
-		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-		<script type="text/javascript" src="js-plugin/easing/jquery.easing.1.3.js"></script>
 
-		<script type="text/javascript" src="js-plugin/flexslider/jquery.flexslider-min.js"></script>
-
-		<script type="text/javascript" src="js-plugin/isotope/jquery.isotope.min.js"></script>
-		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
-		<script type="text/javascript" src="js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-		<script type="text/javascript" src="js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
-		<script type="text/javascript" src="js-plugin/parallax/js/jquery.stellar.min.js"></script>
-		<!-- <script type="text/javascript" src="js-plugin/smoothscroll/SmoothScroll.js"></script> -->
-		<script type="text/javascript" src="js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
-		<script type="text/javascript" src="js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
-
-		<script type="text/javascript" src="js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-
-
-		<!-- Custom  -->
-		<script type="text/javascript" src="js/custom.js"></script>
 	</body>
 	</html>
