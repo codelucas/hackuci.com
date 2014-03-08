@@ -145,3 +145,7 @@ a.register_button {
   font-size: 25px;
   width: 200px;
 }
+
+div.spacer {
+  margin-top: 55px;
+}
