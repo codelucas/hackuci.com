@@ -592,7 +592,8 @@ body#fullScreen #mainHeader{display:none;}
 #homeFullScreen {
 	/*background-image: url('../images/theme-pics/paralax-1.jpg');*/
 	
-	background-image: url('../images/hack_uci_bg.jpg');
+	/*background-image: url('../images/hack_uci_bg.jpg');*/
+	background-image: url('http://www.hackuci.com/images/bren.jpg');
 	height:100%;
 	display:table;
 }
