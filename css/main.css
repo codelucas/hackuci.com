@@ -3,6 +3,13 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+
+}
+
+.black-bg {
+  height: 100%;
+  background-color: #000;
+  background-size: 100% auto;
 }
 
 a {
@@ -22,8 +29,9 @@ a {
 
 .page-bg {
   height: 100%;
-  background-image: url(../images/bren.jpg);
-  background-size: cover;
+  background: url(../images/bren.jpg) no-repeat center;
+  /* background-size: cover; */
+  background-size: 100% auto;
 }
 
 .wrapper {
@@ -43,15 +51,15 @@ a {
   width: 600px;
 }
 
-.main-content {
+.blub_highlights {
   color: #fff;
   background-color: #1e2736;
   padding: 50px 20px;
 }
 
-.main-content p {
+.blub_highlights p {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   margin: 10px 0;
 }
@@ -101,6 +109,7 @@ a {
   text-align: center;
   font-weight: normal;
   font-size: 26px;
+  background-color: #000;
 }
 
 h3 {
@@ -117,7 +126,14 @@ h3 {
   font-size: 14px;
 }
 
-#register {
+h4 {
+}
+
+section.header {
+  margin-top: 225px;
+}
+
+a.register_button {
   color: #000;
   background-color: #fee300;
   padding: 10px;
@@ -126,12 +142,6 @@ h3 {
   text-decoration: none;
   text-align: center;
   display: block;
-  width: 400px;
-}
-
-h4 {
-}
-
-section.header {
-  margin-top: 225px;
+  font-size: 25px;
+  width: 200px;
 }
