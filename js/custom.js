@@ -3,8 +3,6 @@
 /*jshint strict: true */
 
 
-/*************** COLORS TO BE ERASED WHEN INSTALLING THE THEME ***********/
-
 $(document).ready(function() {   
     "use strict";
     var $colorsHTML ='<style>.styleSwitcher {background:#fff; position:fixed; top:200px; width:155px;left:-157px;z-index:9999}' +
@@ -110,7 +108,7 @@ $(document).ready(function() {
     {
         fullscreenImage();
     }
-    
+   /* 
     $(window).scroll(function() {
 
         if ($('#fullScreen').length)
@@ -120,10 +118,10 @@ $(document).ready(function() {
        } else if ($(window).scrollTop()==0){
            $('#mainHeader').slideUp();
        }
-   }
-
+     }
+    
      });
-
+    */
 
 
 	 /*
