@@ -1,3 +1,9 @@
+.sponsor_row {
+    margin-bottom: 30px;
+    font-family: "Open Sans"
+}
+
+
 /* BOOSTRAP CUSTOMIZATION
 ================================================== */
 .navbar {margin-bottom:0;}
@@ -594,6 +600,12 @@ body#fullScreen #mainHeader{display:none;}
 	
 	/*background-image: url('../images/hack_uci_bg.jpg');*/
 	background-image: url('../images/bren.jpg');
+	height:100%;
+	display:table;
+}
+
+#pattern_tessel {
+	background-image: url('../images/tessel.png');
 	height:100%;
 	display:table;
 }
