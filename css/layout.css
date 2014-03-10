@@ -627,7 +627,7 @@ body#fullScreen #mainHeader{display:none;}
 #logoBig img{width:200px; margin:auto; position: relative}
 #homeFullScreen #flexHome {margin: 0;}
 #homeFullScreen #flexHome h1, #homeFullScreen #flexHome .flex-control-nav{text-align: center; margin-bottom: 44px;}
-#homeFullScreen .flexslider .slides > li{height:80px;}
+#homeFullScreen .flexslider .slides > li{height:0px;}
 
 /*** MEDIA QUERIES ***/
 
@@ -664,7 +664,7 @@ body#fullScreen #mainHeader{display:none;}
 
 footer{padding:44px 0;}
 #footerLogo {margin-bottom: 22px;}
-#footerRights {padding:22px; font-size:12px;}
+#footerRights {padding:22px; font-size:10px;}
 
 
 
@@ -726,7 +726,7 @@ margin-bottom:-44px;
 /*** MEDIA QUERIES ***/
 @media(max-width:400px){
 	.flexslider .slides > li {height:120px;}
-	#homeFullScreen .flexslider .slides > li{height:60px;}
+	#homeFullScreen .flexslider .slides > li{height:0px;}
 	#flexHome h2 {font-size: 12px;}
 }
 
@@ -738,7 +738,7 @@ margin-bottom:-44px;
 	}
 	.flex-control-nav{display:block;}
 	.flexslider .slides > li {height:160px;}
-	#homeFullScreen .flexslider .slides > li{height:80px;}
+	#homeFullScreen .flexslider .slides > li{height:0px;}
 }
 @media(min-width:992px){
 	#flexHome h1 {font-size: 50px;}
@@ -1006,6 +1006,11 @@ width: 60px;
 /* MEDIA QUERIES
 ================================================== */
 
+
+@media(min-width:1070px) {
+    .flex-active-slide {
+    }
+}
 
 @media(max-width:767px){
 
