@@ -619,7 +619,7 @@ body#fullScreen #mainHeader{display:none;}
 	text-align:center;
 	margin:auto;
 }
-.btn.homeBtn {position:relative; background:#ffde6c;}
+.btn.homeBtn {position:relative; background:#fff;/*#ffde6c;*/}
 .dateTime {
     color: #fff !important;
 }
