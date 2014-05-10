@@ -82,13 +82,13 @@ ul.iconsList li a:hover, ul.iconsList i {
 /*** buttons ***/
 .btn {
 	background:#024;
-	border:2px solid #ffde6c;
+	border:2px solid #A9DBCB;/*#ffde6c;*/
 }
 .btn:hover {
 	color:#024;
-	border-color:#ffde6c;
+	border-color:#A9DBCB;/*#ffde6c;*/
 	text-shadow:none;
-	background:#ffde6c;
+	background:#A9DBCB;
 }
 .btn-primary {
 	background: #006dcc;
@@ -220,10 +220,10 @@ p.credits a {
 }
 
 /*** flexHome ***/
-#flexHome  h1 {	color:#ffde6c;
+#flexHome  h1 {	color: #A9DBCB;/*#ffde6c;*/
 	background:none;
 	}
-#flexHome  h2 {	color:#ffde6c;
+#flexHome  h2 {	color:#A9DBCB;/*#ffde6c;*/
 	background:none;
 }
 
@@ -364,7 +364,7 @@ border:none}
 }
 
 .color4 h1, .color4 h2, .color4 h3, .color4 h4, .color4 blockquote, .color4 a {
-    color: #ffde6c;
+    color: #A9DBCB;/*#ffde6c;*/
 }
 
 .color4 h2.subTitle:after, .color4 h1.noSubtitle:after {
