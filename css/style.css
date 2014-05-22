@@ -28,6 +28,29 @@
 
 
 
+@media only screen and (min-width: 1280px) {
+  #support {
+    padding: 0 12vw;
+  }
+}
+#support #partners {
+  margin: 40px 0 0;
+}
+#support #umd-partners {
+  margin: 0;
+}
+#support .sponsor {
+  display: inline-block;
+  transition: opacity 0.2s ease-out;
+  opacity: 0.4;
+}
+#support .sponsor:hover {
+  opacity: 1;
+}
+#support .sponsor img {
+  max-width: 100%;
+}
+
 /* BOOSTRAP CUSTOMIZATION
 ================================================== */
 .navbar {margin-bottom:0;}
