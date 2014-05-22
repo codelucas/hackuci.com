@@ -23,20 +23,20 @@ blockquote small {
 	color:inherit;
 }
 h1, h2, h3, h4, h5, h6 {
-	color:#222;
+	color: #478BCF;/*#024;*/
 }
 h2 {
  color:#888;	
 }
 h2 i {color:#999}
 h2.subTitle:after, h1.noSubtitle:after{
-	background-color:#024;
+	background-color:#478BCF;/*#024;*/
 }
 
 /*** parallax sections ***/
 
 .paralaxText blockquote:before, .paralaxText blockquote:after {
-	color:#fff;
+	color: #52DFA1;/*#fff;*/
 }
 #home, #paralaxSlice1, #paralaxSlice2, #paralaxSlice3, #paralaxSlice4 {
 	background-color:#024;
@@ -220,7 +220,7 @@ p.credits a {
 }
 
 /*** flexHome ***/
-#flexHome  h1 {	color: #A9DBCB;/*#ffde6c;*/
+#flexHome  h1 {	color: white;/*#ffde6c;*/
 	background:none;
 	}
 #flexHome  h2 {	color:#A9DBCB;/*#ffde6c;*/
@@ -364,7 +364,7 @@ border:none}
 }
 
 .color4 h1, .color4 h2, .color4 h3, .color4 h4, .color4 blockquote, .color4 a {
-    color: #A9DBCB;/*#ffde6c;*/
+    color: #478BCF;/*#024;*/
 }
 
 .color4 h2.subTitle:after, .color4 h1.noSubtitle:after {

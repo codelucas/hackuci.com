@@ -21,6 +21,13 @@
 margin-bottom: 20px;
 display:block;
 }
+
+#twitter-widget-0 {
+    position: absolute;
+    bottom: 5px;
+    left: 60%;
+}
+
 /*tabs*/
 .panel-default>.panel-heading{
  -webkit-transition: all 0.2s ease-out;
@@ -79,7 +86,7 @@ display:block;
 /* v2 */
 .boxFeature-2 {text-align: center;}
 .boxFeature-2 i {margin-bottom: 22px; display:block;}
-.boxFeature-2 p {font-size: 15px;}
+.boxFeature-2 p {font-size: 17px; line-height:26px;}
 
 .boxContent{padding:22px;}
 /*** utilies classes ***/
@@ -597,9 +604,9 @@ body#fullScreen #mainHeader{display:none;}
 
 #homeFullScreen {
 	/*background-image: url('../images/theme-pics/paralax-1.jpg');*/
-	
 	/*background-image: url('../images/hack_uci_bg.jpg');*/
-	background-image: url('../images/bren.jpg');
+	/*background-image: url('../images/bren.jpg');*/
+	background-image: url('../images/peoplespace-background.jpg');
 	height:100%;
 	display:table;
 }
