@@ -3,6 +3,30 @@
     font-family: "Open Sans"
 }
 
+@media only screen and (min-width: 1280px) {
+  #sponsors {
+    padding: 0 12vw;
+  }
+}
+#sponsors #partners {
+  margin: 40px 0 0;
+}
+#sponsors #umd-partners {
+  margin: 0;
+}
+#sponsors .sponsor {
+  display: inline-block;
+  transition: opacity 0.2s ease-out;
+  opacity: 0.4;
+}
+#sponsors .sponsor:hover {
+  opacity: 1;
+}
+#sponsors .sponsor img {
+  max-width: 100%;
+}
+
+
 
 /* BOOSTRAP CUSTOMIZATION
 ================================================== */

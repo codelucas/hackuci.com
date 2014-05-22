@@ -29,6 +29,10 @@ h2 {
  color:#888;	
 }
 h2 i {color:#999}
+
+h2.whiteSub:after {
+    background-color: #E7E7E7 !important;
+}
 h2.subTitle:after, h1.noSubtitle:after{
 	background-color:#478BCF;/*#024;*/
 }
