@@ -9,18 +9,23 @@
     <meta charset="utf-8">
     <title>HackUCI - UCI's first Hackathon</title>
 
-    <meta name="description" content="">
+    <meta name="description"
+        content="Historically, Orange County and Southern California have 
+        always been conservative in nature and lacking in tech innovation. 
+        It's time to change this. Join us on Memorial Day 
+        Weekend and Hack UCI!"/>
     <meta name="author" content="Lucas Ou-Yang">
 
     <meta property="og:title" content="HackUCI - Redefine Orange County"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="http://hackuci.com/images/fb_og.jpg"/>
     <meta property="og:url" content="http://www.hackuci.com/"/>
-    <!--<meta property="og:site_name" content="HackUCI"/>-->
     <meta property="fb:admins" content="lucas.ouyang.7"/>
+    <meta property="og:site_name" content="HackUCI"/>
     <!--<meta property="fb:app_id" content=""/>-->
 
-    <meta property="og:description" content="Historically, Orange County and Southern California have 
+    <meta property="og:description" 
+        content="Historically, Orange County and Southern California have 
         always been conservative in nature and lacking in tech innovation. 
         It's time to change this. Join us on Memorial Day 
         Weekend and Hack UCI!"/>
@@ -40,22 +45,24 @@
     <link rel="stylesheet" type="text/css" href="js/pageSlide/jquery.pageslide.css" />
     <link rel="stylesheet" href="js/owl.carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="js/owl.carousel/owl-carousel/owl.theme.css">
+
     <!-- Icon css -->
     <link type="text/css" rel="stylesheet" href="css/font-icons/custom-icons.css">
     <link type="text/css" rel="stylesheet" href="css/font-icons/custom-icons-ie7.css">
     <link type="text/css" rel="stylesheet" href="css/style-1.css">
     <link type="text/css" id="colors" rel="stylesheet" href="css/colors-1.css">
 
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script> <![endif]-->
     <script src="js/modernizr-2.6.1.min.js"></script>
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- 
-    I know js should be at the end of an html file but out of laziness I am integrating
-    MailChimp's embedded forms in this file. The embedded forms override a lot of our
-    required javascript. So I put the registration form at the end and we can use our
-    javascript at the start of the file until then. ;)
+    Javascript should normally be at the end of an html file for performance reasons.
+    However, MailChimp requires a set of Javascript libraries to be loaded
+    before the Mailchimp html can execute, so we opt to place our .js files all at 
+    the top for sanity.
     -->
     <script type="text/javascript" src="js/respond/respond.min.js"></script>
     <script type="text/javascript" src="js/jquery/1.8.3/jquery.min.js"></script>
@@ -101,7 +108,6 @@
                         </button>
                         <!--
                         <a class="navbar-brand" href="/"><img src="images/hackUCI_black_OLD.png" 
-                            style="height:40%;width:40%;" 
                             alt="The biggest hackathon Irvine has ever seen!"/></a> 
                         -->
                     </div>
@@ -124,34 +130,27 @@
                 <div class="paralaxMask"></div>
                 <div id="fullScreenSliderWrapper">
                     <div id="logoBig">
-                        <img class="img-responsive" style="width:450px;"
-                        src="/images/logo.png" alt="hackUCI logo" />
+                        <img class="img-responsive" src="/images/logo.png" 
+                            alt="hackUCI logo" />
                     </div>
                     <br>
                     <div class="flexslider" id="flexHome">
                         <ul class="slides">
-                            <li>
-                                <h1 style="font-size:50px;">Memorial Day Weekend - May 23rd-25th</h1>
-                            </li>
-                            <li>
-                                <h1 style="font-size:50px;">Redefine Orange County</h1>
-                            </li>
-                             <li>
-                                <h1 style="font-size:50px;">Hosted at PeopleSpace OC</h1>
-                            </li>
+                            <li> <h1>Memorial Day Weekend - May 23rd-25th</h1> </li>
+                            <li> <h1>Redefine Orange County</h1> </li>
+                            <li> <h1>Hosted at PeopleSpace OC</h1> </li>
                         </ul>
                     </div> 
                     <!--
                     <a href="http://hackuci.eventbrite.com" target="_blank" 
                         class="homeBtn btn">register now</a>
                     -->
-                    <a href="docs/info.pdf" target="_blank" style="color:#478BCF;background-color:#E7E7E7;"
-                        class="homeBtn btn">More information</a>
+                    <a href="docs/info.pdf" target="_blank" 
+                        class="moreInfo homeBtn btn">More information</a>
             </div>
         </section>
 
-        <section class="slice color4 noPaddingBottom" id="about" 
-                style="background-color:#E7E7E7;">
+        <section class="slice color4 noPaddingBottom" id="about">
             <div class="container">
                 <div class="row">
                     <h1 class="center-text"><strong>Live band</strong> @ opening ceremony</h1>
@@ -168,16 +167,15 @@
             </div>
         </section>
 
-        <section class="slice" id="faq" style="background-color:#478BCF;color:#E7E7E7;">
+        <section class="slice" id="faq">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1 style="color:#E7E7E7;">FAQ</h1>
-                        <h2 style="background-color:#E7E7E7;color:#E7E7E7;" 
-                            class="subTitle whiteSub"></h2>
+                        <h1 class="mainGray">FAQ</h1>
+                        <h2 class="grayBlue subTitle whiteSub"></h2>
                     </div>
                 </div>
-                <div class="row sponsor_row">
+                <div class="row faq-row">
                     <div class="col-md-3 col-sm-6 ">
                         <article class="boxFeature-2">
                             <p><strong>What is a Hackathon?</strong></p>
@@ -218,7 +216,7 @@
                         </article>
                     </div>	
                 </div>
-                <div class="row sponsor_row">
+                <div class="row faq-row">
                     <div class="col-md-3 col-sm-6">
                         <article class="boxFeature-2">
                             <p><strong>What should I bring?</strong></p>
@@ -252,20 +250,20 @@
             </div>
         </section>
 
+    <div class="no-section-needed-for-this-one">
         <div id="paralaxSlice1" data-stellar-background-ratio="0.5">
             <div class="maskParent">
-                <div class="paralaxMask" 
-        style="background-image:url(/images/beach-background.jpg);background-repeat:no-repeat;background-size:cover;"></div>
-                <div class="paralaxText container"> <!-- TODO, fix all of this terrible inline styling -->
-                    <blockquote class="bigTitle" 
-                        style="background:rgba(0, 34, 68, 0.4);color:#52DFA1;">Let us 
-                        change what it means to be from Southern California
+                <div class="paralaxMask beachBg"></div>
+                <div class="paralaxText container"> 
+                    <blockquote class="bigTitle beachQuote">
+                        Let us change what it means to be from Southern California
                     </blockquote>
                 </div>
             </div>
         </div>
+    </div>
 
-    <section class="slice" id="register" style="background-color:#E7E7E7;">
+    <section class="slice" id="register">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -273,7 +271,12 @@
                     <h1>Tickets are sold out for Spring '14!
                         <br>
                         <br>
-                        Visit our <strong><a style="color:#478BCF;" target="_blank" href="https://www.facebook.com/hackUCIrvine">Facebook</a></strong> or <strong><a style="color:#478BCF;" target="_blank" href="http://twitter.com/hackuci">Twitter</a></strong> pages</a></strong> for more info on next years event!</h1>
+                        Visit our <strong><a class="mainBlue" target="_blank" 
+                            href="https://www.facebook.com/hackUCIrvine">Facebook</a></strong> 
+                        or <strong><a class="mainBlue" target="_blank" 
+                            href="http://twitter.com/hackuci">Twitter</a>
+                            </strong> pages</a></strong> 
+                        for more info on next years event!</h1>
                     </center>
                     <!--
                     <h1><a href="http://hackuci.eventbrite.com">Click <strong>here</strong> 
@@ -287,27 +290,30 @@
         </div>
     </section>
 
-<section class="slice" id="social-media">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12" style="height:100px;">
-                <h1>Make us Viral</h1>
-                <!--<h2 class="subTitle"></h2>-->
-                    <div style="position:absolute;bottom:5px;left:20%;" class="fb-like" 
-                        data-href="https://www.facebook.com/hackUCIrvine" 
+    <section class="slice" id="social-media">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 viralDiv">
+                    <h1>Make us Viral</h1>
+                    <!--<h2 class="subTitle"></h2>-->
+
+                    <!-- Style for below button must be inline -->
+                    <div class="fb-like" data-href="https://www.facebook.com/hackUCIrvine" 
                         data-layout="standard" data-action="like" data-show-faces="false" 
-                        data-share="false"></div>
+                        data-share="false"
+                        style="position:absolute;bottom:5px;left:20%;">
+                    </div>
 
-                <a href="https://twitter.com/HackUCI" class="twitter-follow-button" 
-                    data-show-count="true" data-lang="en">Follow @HackUCI</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <a href="https://twitter.com/HackUCI" class="twitter-follow-button" 
+                        data-show-count="true" data-lang="en">Follow @HackUCI</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="slice" id="sponsors" style="margin-top:50px;">
+    <section class="slice" id="sponsors">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -323,15 +329,19 @@
                 </div>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;">
+            <!-- B/c of variance in logo sizes and shapes, we are going
+            to individually mold each logo to fit with an inline style 
+            width percentage. -->
+
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://www.cylance.com/" target="_blank">
-                    <div class="sponsor" style="">
+                    <div class="sponsor">
                         <img src="/images/sponsors/cylance.jpg">
                     </div>
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:30px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://ipcprint.com/" target="_blank">
                     <div class="sponsor">
                         <img src="/images/sponsors/infinite.jpg">
@@ -344,7 +354,7 @@
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:0px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://www.coastlinerop.schoolloop.com/" target="_blank">
                     <div class="sponsor" style="width:30%;">
                         <img src="/images/sponsors/rop.jpg">
@@ -357,7 +367,7 @@
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:-10px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://rdio.com" target="_blank">
                     <div class="sponsor"style="width:25%;">
                         <img src="/images/sponsors/rdio.png">
@@ -368,14 +378,15 @@
                         <img src="/images/sponsors/vitallink.jpg">
                     </div>
                 </a>
-                <a href="http://www.cccewd.net/initiative_iima4biz.cfm" target="_blank">
+                <a href="http://www.cccewd.net/initiative_iima4biz.cfm" 
+                        target="_blank">
                     <div class="sponsor" style="width:28%;">
                         <img src="/images/sponsors/dsn.jpg">
                     </div>
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:30px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://amazon.com" target="_blank">
                     <div class="sponsor" style="width:30%;">
                         <img src="/images/sponsors/amazon.jpg">
@@ -391,10 +402,9 @@
                         <img src="/images/sponsors/mathobotix_logo.jpg ">
                     </div>
                 </a>
-
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:30px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://ics.uci.edu" target="_blank">
                     <div class="sponsor" style="width:27%;">
                         <img src="/images/sponsors/bren.png">
@@ -410,10 +420,9 @@
                         <img src="/images/sponsors/ivecg.jpg">
                     </div>
                 </a>
-
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:30px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="https://developers.kloudless.com/" target="_blank">
                     <div class="sponsor" style="width:27%;">
                         <img src="/images/sponsors/kloudless.png">
@@ -436,7 +445,7 @@
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:30px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://dropbox.com" target="_blank">
                     <div class="sponsor" style="width:25%;">
                         <img src="/images/sponsors/dropbox.png">
@@ -454,7 +463,7 @@
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://google.com" target="_blank">
                     <div class="sponsor"style="width:20%;">
                         <img src="/images/sponsors/google.png">
@@ -470,10 +479,9 @@
                         <img src="/images/sponsors/facebook.png">
                     </div>
                 </a>
-
             </div>
 
-            <div class="col-xs-12" style="text-align:center;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://lob.com" target="_blank">
                     <div class="sponsor" style="width:23%;margin-top:30px;">
                         <img src="/images/sponsors/lob.png">
@@ -486,7 +494,7 @@
                 </a>
             </div>
 
-            <div class="col-xs-12" style="text-align:center;margin-top:30px;">
+            <div class="col-xs-12 sponsor-row">
                 <a href="http://readyforce.com" target="_blank">
                     <div class="sponsor" style="width:15%;">
                         <img src="/images/sponsors/readyforce.jpg">
@@ -497,7 +505,7 @@
         </div>
     </section>
 
-    <section class="slice" id="support" style="margin-top:100px;">
+    <section class="slice" id="support">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -505,31 +513,33 @@
                     <h2 class="subTitle"></h2>
                 </div>
             </div>  
-            <div class="col-xs-12" style="text-align:center;margin-top:-60px;">
+
+            <div class="col-xs-12 community-row">
                 <a href="http://wics.ics.uci.edu" target="_blank">
                     <div class="sponsor" style="width:35%;">
                         <img src="/images/sponsors/wics_logo.png">
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12" style="text-align:center;">
+
+            <div class="col-xs-12 community-row">
                 <a href="http://hacktech.io" target="_blank">
                     <div class="sponsor"style="width:30%;">
                         <img src="/images/sponsors/hacktech.jpg">
                     </div>
                 </a>
                 <a href="" target="_blank">
-                    <div class="sponsor"style="width:15%;">
+                    <div class="sponsor"style="width:15%;margin-left:-35px;">
                         <img src="/images/sponsors/antre.jpg">
                     </div>
                 </a>
                 <a href="http://mlh.io" target="_blank">
-                    <div class="sponsor"style="width:25%;">
+                    <div class="sponsor"style="width:15%;">
                         <img src="/images/sponsors/mlh.png">
                     </div>
                 </a>
                 <a href="" target="_blank">
-                    <div class="sponsor"style="width:30%;">
+                    <div class="sponsor"style="width:25%;">
                         <img src="/images/sponsors/blackstone.jpg">
                     </div>
                 </a>
@@ -537,7 +547,7 @@
         </div>
     </section>
 
-    <section id="footerRights" style="margin-top:45px;">
+    <section id="footerRights">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
@@ -554,6 +564,7 @@
     </section>
 
     </div>
+
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];

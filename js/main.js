@@ -16,6 +16,7 @@ $(document).ready(function() {
     '<div class="styleSwitcher">' +
     '<a href="#" id="showHideSwitcher"><i class="icon-cog"></i></a>' +
     '<h1>style switcher</h1><ul class="switcher">' +
+    /*
     '<li><a href="css/orange.css" style="background:#F86D18">Orange</a></li>' +
     '<li><a href="css/yellow.css" style="background:#FFCC00">Yellow</a></li>' +
     '<li><a href="css/sea-green.css" style="background:#3CB6B6">Sea green</a></li>' +
@@ -26,6 +27,7 @@ $(document).ready(function() {
     '<li><a href="css/coffee.css" style="background:#A38757">Coffee</a></li>' +
     '<li><a href="css/red.css" style="background:#E44832">Red</a></li>' +
     '<li><a href="css/purple.css" style="background:#C44AD0">Purple</a></li>' +
+    */
     '</ul>' +
     '</div>'; 
 
@@ -64,11 +66,6 @@ $(document).ready(function() {
        e.preventDefault();
    });
 });
-
-/*************** GOOGLE ANALYTICS ***********/
-/*************** REPLACE WITH YOUR OWN UA NUMBER ***********/
-window.onload = function () { "use strict"; gaSSDSLoad(""); }; 
-/*************** REPLACE WITH YOUR OWN UA NUMBER ***********/
 
 /*
 |--------------------------------------------------------------------------

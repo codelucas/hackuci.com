@@ -329,8 +329,18 @@ border:none}
 /* END MISCELANIOUS
 ================================================== */
 
-/* NEKO CSS FRAMEWORK
-================================================== */
+.mainGray {
+    color:#E7E7E7;
+}
+
+.mainBlue, .mainBlue:hover {
+    color:#478BCF;
+}
+
+.grayBlue {
+background-color:#E7E7E7;
+color:#E7E7E7;
+}
 
 /*** Feature box **/
 
@@ -379,6 +389,3 @@ border:none}
 .iconRounded:hover, .color1 .iconRounded:hover{background-color:#024;color:#fff;}
 .color1 .iconRounded {color:#024;}
 .color4 .iconRounded {background-color:#FFF;color:#024;}
-
-/* END NEKO CSS FRAMEWORK
-================================================== */
