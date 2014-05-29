@@ -1,6 +1,6 @@
 The code powering www.hackuci.com
 ---------------------------------
-![HackUCI Logo](images/logo.png)
+![HackUCI Logo](images/logo-with-bg.jpg)
 
 UC Irvine's first ever hackathon. To be held on Memorial Day Weekend - 23rd-25th.
 
