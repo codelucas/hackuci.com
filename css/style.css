@@ -16,8 +16,9 @@
 }
 #sponsors .sponsor {
   display: inline-block;
-  transition: opacity 0.2s ease-out;
-  opacity: 0.4;
+  transition: opacity 0.4s ease-out;
+  opacity: 0.6;
+  padding: 10px;
 }
 #sponsors .sponsor:hover {
   opacity: 1;
@@ -26,7 +27,9 @@
   max-width: 100%;
 }
 
-
+#faq p {
+    text-align: left;
+}
 
 @media only screen and (min-width: 1280px) {
   #support {
@@ -41,8 +44,9 @@
 }
 #support .sponsor {
   display: inline-block;
-  transition: opacity 0.2s ease-out;
-  opacity: 0.4;
+  transition: opacity 0.4s ease-out;
+  opacity: 0.6;
+  padding: 10px;
 }
 #support .sponsor:hover {
   opacity: 1;
