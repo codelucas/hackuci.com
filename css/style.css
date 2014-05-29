@@ -438,6 +438,38 @@ hr {
 ================================================== */
 .slice {padding:33px 0;}
 
+.sponsor-row {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.community-row {
+    text-align: center;
+}
+
+.faq-row {
+    margin-bottom: 30px;
+    font-family: "Open Sans";
+}
+
+.viralDiv {
+    height: 100px;
+}
+
+.beachBg {
+    background-image: url(/images/beach-background.jpg) !important; 
+    background-repeat:no-repeat !important;
+    background-size:cover !important;
+}
+
+.beachQuote {
+    background: rgba(0, 34, 68, 0.4);
+    color: #52DFA1 !important;
+}
+
+.fb-like { }
+
+
 /*** buttons ***/
 .btn {
 	text-transform:uppercase;
@@ -587,37 +619,6 @@ hr {
 @media(min-width:1200px){}
 
 /*** END MEDIA QUERIES ***/
-
-.sponsor-row {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.community-row {
-    text-align: center;
-}
-
-.faq-row {
-    margin-bottom: 30px;
-    font-family: "Open Sans";
-}
-
-.viralDiv {
-    height: 100px;
-}
-
-.beachBg {
-    background-image: url(/images/beach-background.jpg); 
-    background-repeat:no-repeat;
-    background-size:cover;
-}
-
-.beachQuote {
-    background: rgba(0, 34, 68, 0.4);
-    color: #52DFA1 !important;
-}
-
-.fb-like { }
 
 /* END HEADER
 ================================================== */
@@ -812,7 +813,6 @@ footer{padding:44px 0;}
 #footerRights {padding:22px; font-size:10px;}
 
 
-
 @media(min-width:768px){.footerWidget{float:right;}}
 /* END FOOTER 
 ================================================== */
@@ -859,8 +859,6 @@ margin-bottom:-44px;
 	font-size:3em;
 	text-align:center;
 	color:#fff;
-
-
 }
 .owl-next {right:0;}
 .owl-prev {left:0;}
@@ -959,9 +957,6 @@ header#project{padding:22px 0;}
 
 /* END FORM
 ================================================== */
-
-
-
 
 /* MISCELANIOUS
 ================================================== */
@@ -1120,13 +1115,13 @@ p.credits {
 /*** end responsive video ***/
 
 .sharrre .button {
-float: left;
-width: 60px;
+    float: left;
+    width: 60px;
 }
 
 .moreInfo {
-color:#478BCF;
-background-color:#E7E7E7;
+    color:#478BCF;
+    background-color:#E7E7E7;
 }
 
 .navbar-brand 
@@ -1154,22 +1149,15 @@ background-color:#E7E7E7;
 
 /* MEDIA QUERIES
 ================================================== */
-
-
 @media(min-width:1070px) {
     .flex-active-slide {
     }
 }
 
 @media(max-width:767px){
-
-
-
-
 }
 
 @media(min-width:768px){
-
     .navbar-brand>img{
     width: 103px;
     }
@@ -1192,9 +1180,6 @@ background-color:#E7E7E7;
     }
 }
 @media(min-width:1200px){
-
-
-
 }
 
 /* END MEDIA QUERIES
